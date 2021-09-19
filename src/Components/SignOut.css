@@ -1,0 +1,31 @@
+.SignOut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SignOut > Button {
+  color: #fff;
+  border-radius: 12px;
+  background-color: #0009;
+}
+
+.SignOut > Button:hover {
+  background-color: #db3236;
+}
+
+.SignOut > Button {
+  position: fixed;
+  top: 2%;
+  left: 94%;
+  bottom: 100;
+}
+
+@media (max-width: 500px) {
+  .SignOut > Button {
+    position: fixed;
+    top: 2%;
+    left: 82%;
+    bottom: 100;
+  }
+}

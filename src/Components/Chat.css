@@ -1,0 +1,139 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.msgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 45%;
+  height: 100vh;
+  background-color: #0005;
+  box-shadow: 0 0 10px rgb(164, 164, 164);
+  border-radius: 25px;
+}
+
+.msg {
+  display: flex;
+  padding: 20px 10px 0 20px;
+  margin: 12px 15px;
+  border-radius: 3000px;
+  box-shadow: 0 0 10px rgb(164, 164, 164);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+p {
+  font-weight: 500;
+  font-size: 25px;
+  margin: 0px 10px 15px 10px;
+  overflow-wrap: break-word;
+  max-width: 80%;
+}
+
+img {
+  border-radius: 50%;
+  height: 45px;
+  margin-top: -20px;
+  border: 2px solid #000;
+}
+
+.sent {
+  background-color: #395dff;
+  color: white;
+  border-top-right-radius: 1000px;
+  flex-direction: row-reverse;
+  padding: 20px 20px 0 20px;
+  margin: 15px 0px 15px 400px;
+  text-align: end;
+  float: right;
+}
+
+.received {
+  border: 1px solid lightgray;
+  background-color: #fafafa;
+  border-top-left-radius: 1000px;
+  float: left;
+}
+
+.sendMsg {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  border-top: 1px solid lightgray;
+  margin-left: -5px;
+  padding: 10px;
+  padding-bottom: 30px;
+  background-color: #fafafa;
+}
+
+.box-chat {
+  position: fixed;
+  top: -5%;
+  margin-top: 50%;
+  padding: 20px;
+  width: 680px;
+  background-color: #fff9;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+}
+
+.Input-Text {
+  color: #fff;
+  width: 80%;
+}
+
+.box-chat > Button {
+  margin-left: 25px;
+  color: #0007;
+}
+
+.box-chat > Button:hover {
+  color: #fff;
+  background-color: #0009;
+}
+
+.container > h1 {
+  color: #fff;
+  margin: 25px;
+}
+
+@media (max-width: 500px) {
+  .msgs {
+    width: 70%;
+    height: 90vh;
+  }
+  p {
+    font-size: 15px;
+    margin: 10px 10px 15px 10px;
+  }
+  .sent {
+    padding: 7px 7px 0 7px;
+  }
+  .received {
+    padding: 7px 7px 0 7px;
+  }
+  img {
+    height: 30px;
+    margin-top: -7px;
+  }
+  .box-chat {
+    position: fixed;
+    top: 32%;
+    width: 339px;
+    margin-top: 80%;
+  }
+  .Input-Text {
+    width: 70%;
+  }
+  .sent {
+    margin: 10px 0px 7px 165px;
+  }
+}

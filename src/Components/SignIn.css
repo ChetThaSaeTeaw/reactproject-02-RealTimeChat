@@ -1,0 +1,37 @@
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2021/03/16/10/04/street-6099209_960_720.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -10;
+}
+
+.SignIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.SignIn > h1 {
+  color: #fff;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.SignIn > h3 {
+  color: #fff;
+  margin: 5px 0 25px 0;
+  cursor: pointer;
+}
+
+.SignIn > Button {
+  color: #fff;
+  border-radius: 12px;
+  background-color: #0009;
+}
+
+.SignIn > Button:hover {
+  background-color: #db3236;
+}
